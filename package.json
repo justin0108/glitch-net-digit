@@ -23,11 +23,10 @@
     "webpack-dev-server": "^4.11.1"
   },
   "scripts": {
-    "clean": "rm -fr dist",
-    "start": "webpack && cpy ./dist/bundle.js ./public --flat && tsc && node ./dist/expressMain.js",
+    "clean": "rm -fr dist && rm ./dist/bundle.js",
+    "start": "tsc && node ./dist/expressMain.js",
     "develop": "webpack serve --hot --port 9090",
-    "build-webpack": "webpack",
-    "build-webpack-prod": "webpack --mode production",
+    "build-webpack": "webpack --mode production && cpy ./dist/bundle.js ./public --flat",    
     "build-ts": "tsc"
   },
   "repository": {
