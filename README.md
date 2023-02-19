@@ -1,2 +1,2 @@
 # glitch-net-digit
-https://jc-glitch-net-digit.glitch.me/
+https://jc-github-glitch-net-digit.glitch.me/
